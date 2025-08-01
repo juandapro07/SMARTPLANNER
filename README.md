@@ -16,3 +16,4 @@ HTML / CSS / JavaScript
 
 Autores
 Desarrollado por Maria José Estrada, Julian Garcia, Juan Pablo Contreras, Juan José Vergara.
+
