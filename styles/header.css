@@ -1,0 +1,66 @@
+header {
+    background-color: #fbfbfb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+    margin-left: 30px;
+    margin-right: 50px;
+}
+
+nav .izquierda-nav, .derecha-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+nav .izquierda-nav .nombre-descripcion {
+    display: flex;
+    flex-direction: column;
+}
+
+.izquierda-nav .nombre-descripcion h1{
+    font-size: 20px;
+}
+
+.izquierda-nav .nombre-descripcion p {
+    font-size: 13px;
+    font-weight: bold;
+}
+
+nav .derecha-nav .buscador-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border-radius: 15px;
+    border: 2px solid rgb(108, 255, 108);
+    gap: 5px;
+}
+
+.buscador-nav svg {
+    color: rgb(132, 132, 132);
+}
+
+.buscador-nav input {
+    display: flex;
+    height: 25px;
+    width: 200px;
+    border: transparent;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+}
+
+.buscador-nav input:focus {
+    outline: none;
+}
