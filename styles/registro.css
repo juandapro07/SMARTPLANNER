@@ -1,4 +1,3 @@
-/* Estilo general del body */
 * {
     margin: 0;
     padding: 0;
@@ -14,31 +13,22 @@ background: linear-gradient(120deg, rgba(239, 251, 249, 1) 0%, rgba(242, 252, 25
 body {
   background-color: #eefcee;
   margin: 0;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+  padding: 0;
+  min-height: 100vh;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.logo{
-    padding-top: 1rem;
-    margin-top: 2rem;
-    margin-bottom: 1rem;
+.logo {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
-footer{
-  margin-top: 2rem;
-  padding: 1rem;
-  text-align: center;
-  color: #94a3b8;
-  font-size: 0.8rem;
-}
-/* Contenedor del login */
-.login-form {
+.register-form {
   width: 100%;
-  max-width: 400px;
+  max-width: 420px;
   padding: 2rem;
   background-color: #ffffff;
   border-radius: 1rem;
@@ -48,40 +38,32 @@ footer{
   gap: 1rem;
 }
 
-/* Títulos */
-.login-form h2 {
+.register-form h2 {
   margin: 0;
   font-size: 1.5rem;
   text-align: center;
   font-weight: 600;
 }
 
-.login-form p {
+.register-form p {
   text-align: center;
   color: #6b7280;
   margin: 0.25rem 0 1rem;
 }
 
-/* Inputs */
-.login-form input[type="email"],
-.login-form input[type="password"] {
-  width: 100%;
-  padding: 0.75rem 0.75rem 0.75rem 2.5rem;
-  border: 1px solid #d1d5db;
-  border-radius: 0.5rem;
-  font-size: 1rem;
-  outline: none;
-  background-color: #f9fafb;
+.register-form h3 {
+  font-size: 0.95rem;
+  font-weight: 500;
+  margin-bottom: 0.25rem;
 }
 
-.login-form input[type="email"]:focus,
-.login-form input[type="password"]:focus {
-  border-color: #3b82f6;
-  background-color: #fff;
+.input-icon {
+  position: relative;
+  display: flex;
+  align-items: center;
 }
 
-/* Icono en los inputs */
-.login-form svg {
+.input-icon svg {
   position: absolute;
   left: 0.75rem;
   top: 50%;
@@ -89,26 +71,32 @@ footer{
   color: #9ca3af;
 }
 
-/* Contenedor relativo para input con ícono */
-.input-icon {
-  position: relative;
-  display: flex;
-  align-items: center;
+.input-icon input {
+  width: 100%;
+  padding: 0.75rem 0.75rem 0.75rem 2.5rem;
+  border: 2px solid #10b981;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  outline: none;
+  background-color: #f9fafb;
 }
 
-/* Errores */
-.error-text {
-  color: #ef4444;
-  font-size: 0.875rem;
-  margin-top: -0.5rem;
+.input-icon input:focus {
+  border-color: #0ea769;
+  background-color: #fff;
 }
 
-/* Recordarme y contraseña */
 .options {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  gap: 0.5rem;
+  font-size: 0.85rem;
+}
+
+.options label {
+  display: flex;
   align-items: center;
-  font-size: 0.875rem;
+  gap: 0.5rem;
 }
 
 .options a {
@@ -117,12 +105,7 @@ footer{
   font-weight: 500;
 }
 
-.options a:hover {
-  text-decoration: underline;
-}
-
-/* Botón principal */
-.login-form button[type="submit"] {
+button[type="submit"] {
   width: 100%;
   background-color: #10b981;
   color: white;
@@ -135,13 +118,13 @@ footer{
   justify-content: center;
   align-items: center;
   gap: 0.5rem;
+  transition: background-color 0.3s;
 }
 
-.login-form button[type="submit"]:hover {
+button[type="submit"]:hover {
   background-color: #0ea769;
 }
 
-/* Línea divisora */
 .divider {
   text-align: center;
   color: #6b7280;
@@ -149,7 +132,6 @@ footer{
   margin: 1rem 0;
 }
 
-/* Botones de redes */
 .social-buttons {
   display: flex;
   justify-content: space-between;
@@ -168,6 +150,7 @@ footer{
   cursor: pointer;
   font-weight: 500;
   gap: 0.5rem;
+  font-size: 0.9rem;
 }
 
 .social-buttons button img {
@@ -175,7 +158,6 @@ footer{
   width: 24px;
 }
 
-/* Enlace de registro */
 .register-text {
   text-align: center;
   font-size: 0.875rem;
@@ -189,4 +171,12 @@ footer{
 
 .register-text a:hover {
   text-decoration: underline;
+}
+
+footer {
+  margin-top: 2rem;
+  padding: 1rem;
+  text-align: center;
+  color: #94a3b8;
+  font-size: 0.8rem;
 }

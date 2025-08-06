@@ -1,0 +1,218 @@
+/* ------------------- Esto hace  que le menu y el contenido queden alineados -------------------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+  background: #EFFBF9;
+  background: linear-gradient(120deg, rgba(239, 251, 249, 1) 0%, rgba(242, 252, 251, 1) 100%);
+}
+
+main {
+  display: flex;
+}
+
+/* ----------------------------------------------------------------------------------------------- */
+*{
+    font-family: 'Poppins', 'Segoe UI', sans-serif;
+}
+h1{
+    font-size: 27px;
+    color: #1e293b;
+    font-family: 'Poppins', 'Segoe UI', sans-serif;
+    font-weight: 500;
+    font-weight: bold;
+}
+#calendar {
+    width: 100%;
+    margin: 30px auto;
+    background: #ffffff;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.05);
+}
+
+.fc-toolbar-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #1e293b;
+}
+
+.fc-col-header-cell-cushion {
+    font-weight: 600;
+    color: #475569;
+}
+
+.fc-daygrid-day-frame {
+    border: 1px solid #d1fae5;
+    border-radius: 10px;
+    padding: 4px;
+    transition: 0.2s ease;
+}
+
+.fc-daygrid-day-frame:hover {
+    background-color: #f0fdf4;
+}
+
+.fc-event {
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    padding: 2px 4px;
+    font-weight: 500;
+    opacity: 0.95;
+}
+
+.fc-event:hover {
+    opacity: 1;
+}
+
+.event-green {
+    background-color: #bbf7d0;
+    color: #065f46;
+}
+.event-blue {
+    background-color: #dbeafe;
+    color: #1e40af;
+}
+.event-purple {
+    background-color: #f3e8ff;
+    color: #6b21a8;
+}
+
+.fc-theme-standard td, 
+.fc-theme-standard th {
+  border: 1px solid #e0e0e0;
+  padding: 5px;
+}
+
+.fc-theme-standard td,
+.fc-theme-standard th {
+  border: none !important;
+}
+.fc-scrollgrid,
+.fc-scrollgrid-section,
+.fc-scrollgrid-sync-table {
+  border: none !important;
+}
+
+.fc .fc-button {
+  background: none !important;
+  border: none !important;
+  box-shadow: none !important;
+  color: #333; /* color flechas <> */
+  font-size: 1.2rem;
+  font-size: 14px !important; 
+  padding: 4px 6px !important;
+}
+
+.fc .fc-button:hover {
+  background-color: transparent !important;
+  color: #000;
+}
+
+.fc .fc-button:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.calendar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 20px;
+}
+
+#crearEventoBtn {
+  background: #34D299;
+  background: linear-gradient(90deg,rgba(52, 210, 153, 1) 0%, rgba(96, 165, 250, 1) 100%);
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  height: fit-content;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  word-spacing: 5px;
+  font-weight: 500;
+   font-size: 1rem;            
+  font-weight: bold;            
+  letter-spacing: 1px;         
+  word-spacing: 5px;             
+  padding: 15px 20px;   
+  margin-right: 0%;
+}
+
+.eventos{
+    background-color: white;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.05);
+}
+
+.eventos ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+
+.eventos li {
+  background: #f7f9fc;
+  padding: 0.75rem 1rem;
+  border-radius: 0.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: background 0.3s ease;
+}
+
+.eventos li:hover {
+  background: #eef2f7;
+}
+
+.eventos .evento {
+  display: flex;
+  flex-direction: column;
+}
+
+.eventos .hora {
+  color: #555;
+  font-size: 0.95rem;
+}
+
+.eventos .descripcion {
+  font-weight: bold;
+  color: #222;
+  font-size: 0.9rem;
+}
+
+.etiqueta {
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 0.25rem 0.75rem;
+  border-radius: 999px;
+  color: white;
+  white-space: nowrap;
+}
+
+
+.trabajo {
+  background: #60a5fa; 
+}
+
+.personal {
+  background: #a78bfa;
+}
+
+.salud {
+  background: #34d399; 
+}
